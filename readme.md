@@ -1,7 +1,7 @@
 # Topology API
 
 This document explains about the following topics related to the 
-Topology Manager in IBM Cloud Pak for Watson AIOps.
+Topology Manager API in IBM Cloud Pak for Watson AIOps.
 
 <table>
     <tr>

@@ -59,7 +59,7 @@ sh 01-create-topology-entities.sh
 sh 02-create-topology-links.sh
 ```
 
-3. It should have created a bookinof app topology with the below nodes along with thier links.
+3. It should have created a bookinfo app topology with the below nodes along with thier links.
 
 - productpage
 - details
