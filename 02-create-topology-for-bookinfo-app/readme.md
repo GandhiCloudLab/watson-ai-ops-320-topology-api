@@ -5,7 +5,39 @@ Topology Manager API.
 
 The shell scripts to create a BookInfo Application topology using Topology API is available in  [files](./files).
 
-## 1. Update Config.sh
+
+## 1. Retrieve Topology API Access Details
+
+#### 1. Login into OCP Cluster
+
+Login into the OCP Cluster where WAIOps AIMgr is installed 
+```
+oc login ....
+```
+
+#### 2. Print the Topology Manager API and access details
+
+Run the below script
+
+```
+sh files/00-print-topology-url-usr-pwd.sh
+```
+
+As a result, Topology API url and access details will be printed like the below.
+
+
+```
+================================================================
+TOPO_API_URL=https://aiops-topology-topology-cp4waiops.aaaa.cloud/1.0/topology
+TOPO_API_URL_SWAGGER=https://aiops-topology-topology-cp4waiops.aaaa.cloud/1.0/topology/swagger
+TOPO_USER=aiops-topology-cp4waiops-user
+TOPO_PWD=aaaaaaaaaaaaaaaa
+TOPO_TENENT_ID=cfd95b7e-3bc7-4006-a4a8-a73a79c71255
+================================================================
+```
+
+
+## 2. Update Config.sh
 
 Update the below properties in [files/00-config.sh](./files/00-config.sh) based on the Topology API url and access details we retrived in the above section. 
 
@@ -16,7 +48,7 @@ TOPO_USER=aiops-topology-cp4waiops-user
 TOPO_PWD=aaaaaaaaaa
 ```
 
-## 2. Create Topology
+## 3. Create Topology
 
 1. Get into the folder `./files` in the cmd line.
 
@@ -34,7 +66,7 @@ sh 02-create-topology-links.sh
 - reviews
 - ratings
 
-## 3. Search and View Topology
+## 4. Search and View Topology
 
 1. In the topology viewer, enter `productpage` and press `enter` key.
 
@@ -80,7 +112,7 @@ Click on `View topology` in `productpage-svc` node.
 
 10. Property `uniqueId` can be provided during the node creation.
 
-### 4. Retrieve `_id` using `uniqueId`
+## 4. Retrieve `_id` using `uniqueId`
 
 We create node using the `uniqueId`. But for further actions like create link, delete node and etc, it requires `_id`. So we can use API to retrive `_id` using `uniqueId`.
 

@@ -1,4 +1,4 @@
-# Topology Node Manipulations
+#  Create, Link and Delete topology nodes using API
 
 This document explains about how to create, link and delete topology nodes using Topology Manager API.
 
@@ -38,7 +38,7 @@ TOPO_TENENT_ID=cfd95b7e-3bc7-4006-a4a8-a73a79c71255
 
 ## 2. Update Config File 
 
-1. Update the below properties in  `./files/00-config.sh` based on the Topology API url and access details we retrived in the above section. 
+Update the below properties in  `./files/00-config.sh` based on the above section. 
 
 ```
 TOPO_API_URL=https://aiops-topology-topology-cp4waiops.aaaaaaaaaaaaaaaaaaa.containers.appdomain.cloud/1.0/topology
@@ -63,7 +63,7 @@ cd files
 sh 01-create-node-payment.sh
 ```
 
-3. The content of the file would be like this. Look at the values of all the params. You don't need to change anything on the JSON_DATA and curl command.
+3. The content of the file would be like this. Look at the values of all the params. You don't need to change anything here.
 
 ```
 PARAM_ENTITY_TYPE=service
@@ -163,7 +163,7 @@ curl -X GET --insecure -u $TOPO_USER:$TOPO_PWD --header 'Content-Type: applicati
 sh 04-retrieve-id-by-uniqueid-cash.sh
 ```
 
-2. The content of the file would be like this. Look at the values of `UNIQUEID`. You don't need to change anything on the curl command.
+2. The content of the file would be like this. Look at the values of `UNIQUEID`. You don't need to change anything here.
 
 ```
 UNIQUEID=cash-svc-id
@@ -207,9 +207,9 @@ The link might have been created between Payment and Cash Node.
 
 ## 6. Delete Link 
 
-Create Link between Payment and Cash Node
+Delete the Link between Payment and Cash Node
 
-1. Run the below command to create Payment Node.
+1. Run the below command to Delete the link.
 
 ```
 sh 06-delete-link.sh

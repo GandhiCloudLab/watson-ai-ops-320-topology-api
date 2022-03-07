@@ -1,9 +1,7 @@
 # Topology API
 
-This document explains about how to enable and use API service in Agile Service Manager
-(Topology Manager) as part of the IBM Cloud Pak for Watson AIOps.
-
-*** Topics: ***
+This document explains about the following topics related to the 
+Topology Manager in IBM Cloud Pak for Watson AIOps.
 
 <table>
     <tr>
@@ -43,3 +41,13 @@ Topology Manager API</td>
 
 </table>
 
+
+
+## Note :
+
+1. The article is based on the the following.
+- RedHat OpenShift 4.8 on IBM Cloud (ROKS)
+- IBM Cloud Pak for Watson AIOps 3.2.0
+
+
+2. API service is not officially supported for production.
