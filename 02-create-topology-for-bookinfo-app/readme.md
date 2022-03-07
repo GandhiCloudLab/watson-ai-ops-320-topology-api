@@ -1,4 +1,4 @@
-# Create Topology for BookInfo App
+# Create BookInfo App Topology using API
 
 This document explains about how to create Topology for BookInfo App using
 Topology Manager API.
